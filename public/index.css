@@ -1,0 +1,451 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html, body {width: auto!important; overflow-x: hidden!important} 
+body{
+    background-image: url(image/6.jpg);
+    background-color:black;
+    background-blend-mode: difference;
+}
+.list a{
+    text-decoration: none;
+}
+.list li{
+    list-style-type: none;
+    /* padding-inline: .45em; */
+    /* margin-top: 8.5rem; */
+    font-size: 35px;
+    color: white;
+}
+.list{
+    font-family: sans-serif;
+}
+.navlist ul{
+    display: flex;
+    margin-left: 15%;
+}
+.list li:hover{
+    color:aqua;
+    text-shadow: 1px 1px 2px black, 0 0 1em aqua, 0 0 0.2em aqua;
+    /* text-decoration:  underline overline; */
+}
+
+/* Pop - up Form */
+
+@import "http://fonts.googleapis.com/css?family=Raleway";
+/*----------------------------------------------
+CSS settings for HTML div Exact Center
+------------------------------------------------*/
+#abc {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+#cbtn{
+    margin-left: 105%;
+    font-size: 25px;
+    padding: 0;
+}
+#cbtn:hover{
+    color: red;
+}
+div#popupContact {
+position:absolute;
+left:50%;
+top:17%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif
+}
+form {
+max-width:300px;
+min-width:250px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff
+}
+p {
+margin-top:30px
+}
+h2 {
+    font-size: 30px;
+background-color:#FEFFED;
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+input[type=text] {
+width:82%;
+padding:10px;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway
+}
+#name {
+    position:relative;
+background-image:url();
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#email {
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+textarea {
+background-repeat:no-repeat;
+background-position:5px 7px;
+width:82%;
+height:95px;
+padding:10px;
+resize:none;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway;
+margin-bottom:30px
+}
+#submit {
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:#FFBC00;
+color:#fff;
+border:1px solid #FFCB00;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+#submit:hover{
+    box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    
+}
+span {
+color:red;
+font-weight:700
+}
+button {
+font-family:'Raleway',sans-serif;
+font-size:15px;
+cursor:pointer;
+margin-top: 3rem;
+padding: 8px 8px ;
+letter-spacing: 2px;
+text-transform :capitalize;
+margin-left: 2rem;
+}
+/*
+.btn{
+    width: max-content;
+    margin-left: 13rem;
+}
+button:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid aqua;
+
+}
+.btn a{
+    box-sizing: border-box;
+    position: relative;
+    padding: 5px 2px;
+    margin:  0 5px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+/*.btn a:hover{
+    background: black;
+    color:white;
+    box-shadow: 0 0 40px lightgray;
+    transition-delay: 0.2s ease;
+}
+.btn a:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.btn a:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.btn a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 3px solid aqua;
+    border-right: 3px solid aqua;
+}
+button{
+    border: 2px solid aqua;
+    border-radius: 2rem;
+    background: none;
+    color: white;
+}
+button:hover{
+    background: black;
+    box-shadow: 0 0 40px lightgray;
+}
+@media only screen and (min-width: 600px) {
+    .navbar{font-size: 30px}
+}
+@media only screen and (max-width: 768px) {
+    .navbar{font-size: 30px}
+   
+}
+.name{
+    color: white;
+    font-size: 70px;
+    font-family: raleway,cursive;
+}
+.title{
+    color: white;
+    margin: 0%;
+    font-size: 1.534rem;
+}
+.belownav{
+    display:flex;
+    margin-top: 130px;
+}
+img{
+    width: 140px;
+    height: 140px;
+    border: 3px aquamarine solid;
+    border-radius: 100px; 
+    margin-top: 2px;
+}
+.btn{
+    margin: 10px;
+    padding: 9px;
+    margin-left: 160px;
+    margin-top: 40px;
+}
+.rightcontent{
+    margin-left: 460px;
+}
+.belownav .secondhalf .leftcontent{
+    margin-left: 40px;
+}
+*/
+
+.firstpart{
+    color: white;
+    margin-left: 450px;
+}
+.fullname{
+    font-size: 65px;
+    letter-spacing: 3px;
+    width: max-content;
+}
+ .professionaltitle{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: max-content;
+}
+.secondsection{
+    margin-left: 4rem;
+}
+img{
+    width: 150px;
+    border: 3.567px aqua solid;
+    border-radius: 9rem;
+}
+.btn a{
+    text-decoration: none;
+}
+button{
+    background: none;
+    letter-spacing: 4px;
+    color: white;
+    border: 2px aqua solid;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+button:hover{
+    background: rgb(0, 0, 0);
+    transition: 0.4sec ease-in-out;
+}
+.fullname:hover{
+    color: aqua;
+    text-shadow: 1px 1px 2px black, 0 0 1em aqua, 0 0 0.2em aqua;
+    color: white;
+
+}
+.professionaltitle:hover{
+    color: aqua;
+    text-shadow: 1px 1px 2px black, 0 0 1em aqua, 0 0 0.2em aqua;
+    color: white;
+}
+.belowbutton{
+    display: flex;
+    margin-left: 31%;
+    margin-top: -6rem;
+}
+#popup{
+    margin-left: 18px;
+}
+.btn{
+    display: flex;
+    margin-left: 32px;
+}
+
+.title > p{
+    color: white;
+}
+.firstsection {
+    display: flex;
+    margin:  100px 500px ;
+}
+/* @media only screen and (max-width: 600px) {
+    
+    .list li {
+        font-size: 20px;
+    }
+    .firstpart {
+        margin-left: 12px;
+    }
+    .fullname {
+        font-size: 50px;
+    }
+    .professionaltitle {
+        font-size: 17px;
+        width: max-content;
+    }
+    .btn{
+        margin-left: 12px;
+    }
+}
+*/
+
+@media only screen and (min-width: 1px) and (max-width: 900px) {
+    body {
+        display: none;
+    }
+    html {
+        background: #FEFFED;
+    }
+
+    html::after {content: "This Website can only view in Desktop Mode !"; color: red; font-size: 21px;
+        
+    }
+    body::after {
+        background-image: url('https://www.freeiconspng.com/uploads/alert-icon-png-red-alert-round-icon-clip-art-3.png');
+    }
+}
+
+/* new css  */
+
+@media only screen and (min-width: 900px) and (max-width: 1490px) {
+    .title {
+        margin-left: -348px;
+    }
+    .btn{
+        margin-left: -109px;
+    }
+}
+
+
+
+/* new code */
+.list {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .list * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  
+  .list li {
+    display: inline-block;
+    list-style: outside none none;
+    /* margin: .1em 1em; */
+    /* paddin: 0; */
+  }
+  
+  .list a {
+    padding: .5em .8em;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .list a::before,
+  .list a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .list a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #00f7ff;
+    border-right: 3px solid #00ffff;
+    transform: translate(-100%, 50%);
+    text-shadow: 1px 1px 2px black, 0 0 1em aqua, 0 0 0.2em aqua;
+  }
+  
+  .list a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #00f7ff;
+    border-left: 3px solid #00ffff;
+    transform: translate(100%, -50%)
+
+  }
+  
+  .list a:hover:before,
+  .list a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .list a:hover {
+    color: #3DA35D;
+  }
+  .navlist {
+    margin-top: 8.5rem;
+  }
